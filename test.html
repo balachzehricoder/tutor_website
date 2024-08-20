@@ -1,0 +1,30 @@
+<body>
+    
+
+    <link rel="stylesheet" href="css/tabs-css.css">
+    <script src="js/tabs-js.js"></script>
+    <div class="div-tabs">
+        <div class="tab-container">
+            <button class="tab active" onclick="openTab(event, 'Online')">Online</button>
+            <button class="tab" onclick="openTab(event, 'InPerson')">In-Person</button>
+        </div>
+
+        <div id="Online" class="tab-content active">
+            <form method="get" action="tutor_search.php" class="search-container">
+                
+                <input type="text" placeholder="Enter Subject"  name="q">
+                <input type="hidden" >
+                <button class="t1055" type="submit" alt="Search"></button>
+            </form>
+        </div>
+
+        <div id="InPerson" class="tab-content">
+            <form method="get" action="tutor_search_wtih_location.php" class="search-container">
+                <input type="text" placeholder="Enter Subject" name="subject">
+                <input type="text" placeholder="Search Location" name="location">
+                <button class="t1055" type="submit" alt="Search"></button>
+            </form>
+        </div>
+    </div>
+
+   
